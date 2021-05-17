@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link href="css/homepage.css" type="text/css" rel="stylesheet"/>
+<!--this is a stylesheet which had to be included for the social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1>AREEB JAMIL</h1>
+  <h2>Home Page</h2>
+  <!--Dark and light mode button learn from w3schools https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+  <button onclick="myFunction()" id="themeSwitch">Light & Dark </button>
+
+<!--Menu button container-->
+  <nav class="menu">
+   <a href="Index.html" class="menuItem">Home</a>
+   <a href="Portfolio.html" class="menuItem">Portfolio</a>
+   <a href= "Aboutme.html" class="menuItem">About</a>
+   <a href="ContactMe.html" class="menuItem">Contact</a>
+ </nav>
+
+<!-- container incuding header and video-->
+  <h2> 2020 Wrap Up</h2>
+  <div class="video">
+  <video
+  poster="img/merc5.jpeg" controls>
+    <source src="vids/cars.mp4" type="video/mp4">
+      <source src="vids/vid6.mov" type="video/mov">
+        Your browser does not support this element
+      </video>
+    </div>
+
+
+<!-- footer container -->
+      <footer class="site-footer">
+        <p class="date" id ="datetime"></p>
+        <p class="footer">Copyright &copy; 2020 All Rights Reserved by Areeb Jamil
+
+        </footer>
+<!-- social media icons  sourced from w3 schools https://www.w3schools.com/howto/howto_css_social_media_buttons.asp. the -->
+        <div class="socialmediaicons">
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-snapchat-ghost"></a>
+          <a href="https://myaccount.google.com/" class="fa fa-google"></a>
+          <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+        </div>
+<!-- gsap animation for heading  was sourced from a lab session and settings were adjusted such as the stagger. It also was key to have the script src above the javascript rule-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
+      <script>
+
+      gsap.from(".menuItem", {
+           duration: 0.6,
+           x: 10,
+           ease: "elastic",
+           stagger: 0.3
+         });
+</script>
+<script>
+
+        function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+       }
+     </script>
+
+
+
+<!--date and time footer// https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_new changes to the font were made, in order to keep consistant font -->
+     <script>
+  var d = new Date();
+  document.getElementById("datetime").innerHTML = d;
+  </script>
+
+
+
+   </body>
+
+   </html>

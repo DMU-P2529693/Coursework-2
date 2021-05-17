@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/portfolio.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+</head>
+<body>
+<h1>AREEB JAMIL</h1>
+  <h2>Portfolio</h2>
+
+  <!--Dark and light mode button-->
+  <button onclick="myFunction()" id="themeSwitch">Light & Dark </button>
+  <nav class="menu">
+    <a href="Index.html" class="menuItem">Home</a>
+    <a href="Portfolio.html" class="menuItem">Portfolio</a>
+    <a href= "Aboutme.html" class="menuItem">About</a>
+    <a href="ContactMe.html" class="menuItem">Contact</a>
+  </nav>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1/7</div>
+      <video controls poster="img/merc1.jpeg">
+        <source src="vids/cars.mp4" type="video/mp4">
+          <source src="vids/cars.ogg" type="video/ogg">
+            Your browser does not support this element
+          </video>
+          <div class="text">first vid </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">1/7</div>
+          <video controls poster="img/merc2.jpeg">
+            <source src="vids/cars.mp4" type="video/mp4">
+              <source src="vids/cars.ogg" type="video/ogg">
+                Your browser does not support this element
+              </video>
+              <div class="text">second vid </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">1/3</div>
+              <video controls poster="img/merc3.jpeg">
+                <source src="vids/cars.mp4" type="video/mp4">
+                  <source src="vids/cars.ogg" type="video/ogg">
+                    Your browser does not support this element
+                  </video>
+                  <div class="text">third vid </div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1/3</div>
+                  <video controls poster="img/merc4.jpeg">
+                    <source src="vids/cars.mp4" type="video/mp4">
+                      <source src="vids/cars.ogg" type="video/ogg">
+                        Your browser does not support this element
+                      </video>
+                      <div class="text">fourth vid </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1/3</div>
+                      <video controls poster="img/merc5.jpeg">
+                        <source src="vids/cars.mp4" type="video/mp4">
+                          <source src="vids/cars.ogg" type="video/ogg">
+                            Your browser does not support this element
+                          </video>
+                          <div class="text">fifth vid </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1/3</div>
+                          <video controls poster="img/merc6.jpeg">
+                            <source src="vids/cars.mp4" type="video/mp4">
+                              <source src="vids/cars.ogg" type="video/ogg">
+                                Your browser does not support this element
+                              </video>
+                              <div class="text">sixth vid </div>
+                            </div>
+
+                            <div class="mySlides fade">
+                              <div class="numbertext">1/3</div>
+                              <video controls poster="img/merc7.jpeg">
+                                <source src="vids/cars.mp4" type="video/mp4">
+                                  <source src="vids/cars.ogg" type="video/ogg">
+                                    Your browser does not support this element
+                                  </video>
+                                  <div class="text">seventh vid </div>
+                                </div>
+
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              </div>
+                              <br>
+
+                              <!-- The dots/circles -->
+                              <div style="text-align:center">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                              </div>
+
+
+                              <!-- footer container -->
+                              <footer class="site-footer">
+                                <p class="date" id="datetime"></p>
+                                <p class="footer">Copyright &copy; 2020 All Rights Reserved by Areeb Jamil
+
+                                </footer>
+                                <!-- social media icons  sourced from w3 schools https://www.w3schools.com/howto/howto_css_social_media_buttons.asp. the -->
+                                <div class="socialmediaicons">
+                                  <a href="https://www.instagram.com/fourkfilms/" class="fa fa-instagram"></a>
+                                  <a href="https://www.facebook.com/profile.php?id=100004850082581/" class="fa fa-facebook"></a>
+                                  <a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-snapchat-ghost"></a>
+                                  <a href="https://myaccount.google.com/" class="fa fa-google"></a>
+                                  <a href="https://www.linkedin.com/in/areeb-jamil-980092204/" class="fa fa-linkedin"></a>
+                                </div>
+
+                                <!-- gsap animation for heading  was sourced from a lab session and settings were adjusted such as the stagger. It also was key to have the script src above the javascript rule-->
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+
+                                <script>
+                                gsap.from(".menuItem", {
+                                  duration: 0.6,
+                                  x: 10,
+                                  ease: "elastic",
+                                  stagger: 0.3
+                                });
+                                </script>
+
+                                <script>
+
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+
+                                // Next/previous controls
+                                function plusSlides(n) {
+                                  showSlides(slideIndex += n);
+                                }
+
+                                // Thumbnail image controls
+                                function currentSlide(n) {
+                                  showSlides(slideIndex = n);
+                                }
+                                function pausevideos() {
+                                  let videos = document.querySelectorAll('video');
+                                  Array.from(videos).forEach( video => {
+                                    video.pause();
+                                  })
+                                }
+                                function showSlides(n) {
+                                  pausevideos();
+                                  var i;
+                                  var slides = document.getElementsByClassName("mySlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  if (n > slides.length) {slideIndex = 1}
+                                  if (n < 1) {slideIndex = slides.length}
+                                  for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                  }
+                                  for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";
+                                  dots[slideIndex-1].className += " active";
+                                }
+                                </script>
+
+                                <script>
+
+                                function myFunction() {
+                                  var element = document.body;
+                                  element.classList.toggle("dark-mode");
+                                }
+                                </script>
+
+                                <!--date and time footer// https://www.w3schools.com/js/tryit.asp?filename=tryjs_date_new changes to the font were made, in order to keep consistant font -->
+                                <script>
+                                var d = new Date();
+                                document.getElementById("datetime").innerHTML = d;
+                                </script>
+
+                              </body>
+
+                              </html>

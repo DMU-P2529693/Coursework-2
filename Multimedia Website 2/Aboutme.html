@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/aboutme.css" type="text/css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title>About Me</title>
+</head>
+<body>
+  <h1>AREEB JAMIL</h1>
+  <h2>About Me</h2>
+
+  <!--Dark and light mode button-->
+  <button onclick="myFunction()" id="themeSwitch">Light & Dark </button>
+
+  <nav class="menu">
+  <a href="Index.html" class="menuItem">Home</a>
+    <a href="Portfolio.html" class="menuItem">Portfolio</a>
+    <a href= "Aboutme.html" class="menuItem">About</a>
+    <a href="ContactMe.html" class="menuItem">Contact</a>
+  </nav>
+
+  <div class="about-content">
+    <h3 class="section_title">About Us</h3>
+    <h4 class="section_subtitle">
+      Hi, I’m Areeb and I specialise in videography and photography,Currently a second-year student a DeMontfort University studying Media Production, I have always wondered how production companies make such thrilling scenes in films and music videos and how are these visons are created. Throughout my studies I have developed and learn a large number of skills that gave me a clear indication on how stuff is run in the media industry.
+
+      Whenever someone has chosen me to be their videographer or photographer I plan before the actual day of shoot. I visit the location given and think about the lighting and also what the best positions are for filming a particular scene. Sometimes I go as a team with other people such a lighting and sound engineers. If that’s the case, regular meetings are held between me and them were options are discussed. My flexibility allows me to work at events regardless of what time they are scheduled for.
+      I have great creativity and customers are always happy with my work
+      I hope whoever’s reading this would want to use my services and hopefully produce some stunning visuals.
+      Thank You All
+    </h4>
+    <h6>Experience In:</h6>
+
+    <ul>
+      <li>Adobe Premiere Pro,</li>
+      <li>Adobe Photoshop</li>
+      <li>Adobe Lightroom,</li>
+      <li>Adobe After Effects,</li>
+      <li>Final Cut Pro X,</li>
+      <li>Adobe Audition,</li>
+    </ul>
+
+
+    <h5> <a class="cv" href="./cv.pdf">Click to View My Resume</a></h5>
+
+  </div>
+
+  <footer class="site-footer">
+    <p class="date" id="datetime"></p>
+    <p class="footer">Copyright &copy; 2020 All Rights Reserved by Areeb Jamil</p>
+  </footer>
+  <!-- social media icons  -->
+  <div class="socialmediaicons">
+    <a href="https://www.instagram.com/fourkfilms/" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/profile.php?id=100004850082581/" class="fa fa-facebook"></a>
+    <a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-snapchat-ghost"></a>
+    <a href="https://myaccount.google.com/" class="fa fa-google"></a>
+    <a href="https://www.linkedin.com/in/areeb-jamil-980092204/" class="fa fa-linkedin"></a>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+  <script>
+  gsap.from(".menuItem", {
+    duration: 0.6,
+    x: 10,
+    ease: "elastic",
+    stagger: 0.3
+  });
+  </script>
+
+  <script>
+
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+  </script>
+  <script>
+  var d = new Date();
+  document.getElementById("datetime").innerHTML = d;
+  </script>
+
+
+
+</body>
+
+</html>
