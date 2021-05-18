@@ -68,7 +68,7 @@ max-width: 100%;
   font-size: 25px;
 
 }
-
+/*css for socail medai icons*/
 .socialmediaicons{
   text-align: center;
 }
@@ -132,7 +132,7 @@ position: absolute;
 background: white;
 color: black;
 }
-
+/*mobile responsive*/
 @media screen and ( max-width:700px) {
   video{
   width: 100%;

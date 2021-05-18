@@ -228,6 +228,7 @@ to {opacity: 1}
 from {opacity: .4}
 to {opacity: 1}
 }
+/*mobile responsive*/
 @media screen and ( max-width:700px) {
   video{
   width: 100%;
